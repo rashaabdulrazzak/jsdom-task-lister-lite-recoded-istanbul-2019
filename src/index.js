@@ -11,7 +11,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 function deleteMe(){
-  let val = document.querySelectorAll ('tasks li');
-  val[val.length - 1].remove();
+  let val = document.querySelectorAll ('li');
+  if(val.length >0 ){
+  val[val.length - 1].remove();}
   
 }
